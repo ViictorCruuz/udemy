@@ -1,0 +1,53 @@
+len(tel) - Retorna o tamanho do meu dicionário (neste caso)
+del(tel["chave"]) - Deleta um item que está no meu dicionário
+tel.keys() - Mostra pra mim quais são as chaves do meu dicionário
+tel.values() - Me retorna apenas os valores dentro do meu dicionário
+
+tel.popitem() - Mostra uma "chave" e um "valor" e em seguida já o deleta
+
+36458899 in tel - Checa se este número está contigo dentro do dicionário
+tel.update(tel2) - Faz a mesclagem de dois dicionários
+
+====================================================================================================================
+            FUNÇÃO
+
+A diferença entre função e método é que a função retorna algum valor, enquannto um método pode não retornar nada
+
+Parâmetros de função: é uma variável declarada entre os parêntesis de uma função
+
+====================================================================================================================
+            PARÂMETROS DEFAULT
+
+São parâmetros que recebem o valor na implementação da função, ou seja, os parâmetros estão dentro dos
+parêntesis
+
+É um parâmetro inicializado com valor default ... Nós definimos um valor default no momento da declaração
+
+* Valor default entende que se no meio da função não forem atribuídos novos valores a
+ela ... *
+
+====================================================================================================================
+            ARGUMENTOS
+
+Posicionais: Nome utilizado para passagem de valores, onde cada valor estará de acordo
+com a ordem passados no cabeçalho da função.
+
+Nomeados: É a passagem de valores fazendo associação com o nome do parâmetro e o valor
+que está sendo enviado.
+* Posso fazer a associação através de chave e valor. e assim, não precisam estar em ordem.
+
+Podemos comparar a passagem de um parâmetro da função com uma tupla, pois é imultável...
+e deve-se seguir a mesma ordem se for passar os argumentos quando invocar a função.
+
+====================================================================================================================
+            RETORNO DE VALORES
+
+É o processamento de alguma informação e o retorno do dado processado!
+Desta forma, temos que todas as funções ao capazes de retornar valores ... Então uma função
+pode ser invocada, pode receber argumentos e pode retornar valores
+
+* Para retornar uma valor utilizamos a palavra reservada RETURN
+
+> Temos que a palavra RETURN é usada para declarar qual informação deverá ser retornada.
+> A mesma funciona também para indicar o fim de um bloco de execução da função, retornando
+assim o valor que estiver à sua frente.
