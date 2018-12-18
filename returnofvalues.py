@@ -2,7 +2,8 @@
 
 ## RETORNO DE VALORES
 
-def soma():
-    return 10
+def soma(x, y):
+    num = x * y
+    return num
 
-print(soma())
+print(soma(10, 50))  # Recebendo os dois parâmetros da função
