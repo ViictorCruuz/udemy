@@ -1,7 +1,7 @@
-len(tel) - Retorna o tamanho do meu dicionário (neste caso)
-del(tel["chave"]) - Deleta um item que está no meu dicionário
-tel.keys() - Mostra pra mim quais são as chaves do meu dicionário
-tel.values() - Me retorna apenas os valores dentro do meu dicionário
+len(tel) - Return the size of my dictionary (in this case)
+del(tel["chave"]) - Deletes an item that are in my dictionary
+tel.keys() - Show for me which are the keys of my dictionary
+tel.values() - Returns only values within my dictionary
 
 tel.popitem() - Mostra uma "chave" e um "valor" e em seguida já o deleta
 
