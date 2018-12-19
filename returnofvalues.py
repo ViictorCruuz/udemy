@@ -5,5 +5,6 @@
 def soma(x, y):
     num = x * y
     return num
+    print("teste")
 
-print(soma(10, 50))  # Recebendo os dois parâmetros da função
+print(soma(10, 20))  # Recebendo os dois parâmetros da função

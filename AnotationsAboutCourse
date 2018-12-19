@@ -51,3 +51,36 @@ pode ser invocada, pode receber argumentos e pode retornar valores
 > Temos que a palavra RETURN é usada para declarar qual informação deverá ser retornada.
 > A mesma funciona também para indicar o fim de um bloco de execução da função, retornando
 assim o valor que estiver à sua frente.
+
+====================================================================================================================
+            FUNÇÃO VARIÁDICA
+
+É toda função capaz de receber quantidades variáveis de parâmetros, ou seja, funções que pode receber 0 ou então N
+parâmetros.
+O python nos proporciona um envio de quantidades variáveis de parâmetros posicionais ou nomeados, ou então posicionais
+e nomeados simultâneamente
+
+>> Importante lembrar que parâmetro nomeado é quando enviamos os valores associados ao parâmetros, ou seja, nós enviamos
+na forma de dicionário
+>> Os parâmetros posicionais é quando na invocação da função passamos os argumentos conforme foi definido na declaração
+da função.
+
+* Todos os parâmetros precedido por 1 asterisco na definição será capaz de receber uma lista de argumentos posicionais,
+ou seja, essa é a sintaxe para passarmos uma lista de valores >>> def func(*args) <<<... da mesma forma, todos os
+parâmetros precedidos por 2 asteriscos >>> (**kwargs) <<< poderá receber um conjunto de argumentos nomeados, "argumentos
+ nomeados é quando associamos o nome do argumento com o valor", logo, nós temos que esse tipo de envio irá resultar numa
+ estrutura do tipo
+dicionário.
+
+====================================================================================================================
+            DESEMPACOTAMENTO I
+
+Empacotar é adicionar um conjunto de valores à uma lista.
+Dizer que há valores empacotados, significar dizer que temos uma estrutura do tipo lista, tupla ou dicionário que contém
+valores.
+
+Desempacotamento é a extração dos elementos contidos (agrupados ou empacotados) numa estrutura.
+
+Todas as vezes que nós tivermos uma lista que contenham os valores que devem ser passados como argumento de uma função,
+nós podemos utilizar o desempacotamento ao invés de dizer explicitamente que o primeiro elemento deve ser associado ao
+primeiro argumento, o segundo elemento com o segundo argumento e assim por diante
