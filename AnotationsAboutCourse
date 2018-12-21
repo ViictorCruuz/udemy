@@ -84,3 +84,23 @@ Desempacotamento é a extração dos elementos contidos (agrupados ou empacotado
 Todas as vezes que nós tivermos uma lista que contenham os valores que devem ser passados como argumento de uma função,
 nós podemos utilizar o desempacotamento ao invés de dizer explicitamente que o primeiro elemento deve ser associado ao
 primeiro argumento, o segundo elemento com o segundo argumento e assim por diante
+
+====================================================================================================================
+            FUNÇÕES ANINHADAS
+
+Aninhamento de função é a declaração de função no corpo de outra função.
+Uma função pode desempenhar uma tarefa específica dentro de outra função
+
+sintaxe segundo Akio: 
+
+>>> if __name__ == '__main__:
+    # Invocação da função
+
+====================================================================================================================
+            INSTRUÇÃO NONLOCAL
+
+É a instrução que permite acessar membros não globais e não locais, membros contidos
+no escopo externo.
+
+Instrução Nonlocal será sempre utilizada quando estivermos trabalhando com funções
+aninhadas.

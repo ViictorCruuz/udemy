@@ -7,10 +7,10 @@ def pessoa(nome, sobrenome, idade):
     print(sobrenome)
     print(idade)
 
-# lista = ["exCript", "Brasil", 20]
+lista = ["Brasil", "exCript", 20]
 # pessoa(tupla[0], tupla[1], tupla[2])
 
-# pessoa(*lista)
+pessoa(*lista)
 
-d = {"nome":"exCript", "sobrenome":"Brasil", "idade":20 }
-pessoa(**d)
+# d = {"nome":"exCript", "sobrenome":"Brasil", "idade":20 }
+# pessoa(**d)

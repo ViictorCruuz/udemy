@@ -1,9 +1,9 @@
-#coding: utf-8
+# coding: utf-8
 
 # EXEMPLO DE DESEMPACOTAMENTO
 
 lista = [11, 10, 12]
-tupla = (11, 10, 12)
+tupla = 11, 10, 12
 
 
 def func(a, b, c):
@@ -11,7 +11,10 @@ def func(a, b, c):
     print(b)
     print(c)
 
-l = [*tupla]
-# l = list(tupla)
-l.sort()
-func(*l)
+# l = [*tupla]
+# # l = list(tupla)
+# l.sort()
+# func(*l)
+
+
+func(**dict(zip(("b", "a", "c"), lista)))
