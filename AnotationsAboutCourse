@@ -104,3 +104,27 @@ no escopo externo.
 
 Instrução Nonlocal será sempre utilizada quando estivermos trabalhando com funções
 aninhadas.
+
+====================================================================================================================
+            MÓDULOS
+
+Módulos são unidades de organização de programas de níveis mais altos.
+São arquivos que contém código Python com extenção *.py
+Os módulos disponibilizam um conjunto de ferramentas, como por exemplo, variáveis ... funções ou classes .. para
+resolução de problemas específicos ao compartilhar suas estruturas e permitir a fácil reutilização de códigos
+
+IMPORTANTE: Um pacote é um conjunto de módulos e um módulo é um arquivo Python isoladamente que pode ou não ter um
+conjunto de variáveis, funções, classes etc ... implementado dentro do mesmo.
+
+Um conjunto de módulos podem dar origem à um pacote, podemos empacotar várias estruturas dentro de módulos diferentes.
+
+CARACTERÍSTICAS: Maneira fácil de organizar componentes no sistema e também acabam servindo como pacotes e nomes,
+partindo de uma perspectiva abstrata
+
+Funções elementares:
+
+>>> Reutilização de um mesmo código
+>>> Namespace
+>>> Compartilhamento de estrutura de dados
+
+Uma biblioteca padrão é o conjunto de módulos contidos na distribuição oficial
