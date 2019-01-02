@@ -128,3 +128,7 @@ Funções elementares:
 >>> Compartilhamento de estrutura de dados
 
 Uma biblioteca padrão é o conjunto de módulos contidos na distribuição oficial
+
+BUILTINS: é o nome do módulo que disponibiliza os principais tipos, funções e variáveis da linguagem.
+
+====================================================================================================================
