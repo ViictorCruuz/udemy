@@ -2,6 +2,23 @@
 
 # INSTRUÇÃO NONLOCAL
 
+def new():
+    print("Hello World !!!")
+
+    var_lol = 20
+
+    def function_interna():
+        nonlocal var_lol
+        var_lol += 5
+        print(var_lol)
+
+    function_interna()
+
+new()
+
+
+
+
 def func():
     print("Welcome")
 
@@ -23,3 +40,6 @@ def funcX():
     return x
 
 print(funcX())
+
+
+

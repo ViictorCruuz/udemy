@@ -132,3 +132,19 @@ Uma biblioteca padrão é o conjunto de módulos contidos na distribuição ofic
 BUILTINS: é o nome do módulo que disponibiliza os principais tipos, funções e variáveis da linguagem.
 
 ====================================================================================================================
+            BLOCOS SEM CÓDIGO ( vazios )
+
+A instrução "PASS", do inglês, significa passar, atravessar, avançar
+É usado quando temos uma função por exemplos mas no momento ainda não vamos declarar nada a ela, então usamos o pass
+para fazer com que nossa aplicação não tenha um problema de Sintaxe ao passar por aquele trecho de nosso código
+
+====================================================================================================================
+            ESCOPO GLOBAL
+
+   É o escopo dos módulos
+
+É a visibilidade que cada membro possui dentro de um determinado código. O escopo é uma das maiores inovações das
+linguagens modernas, permitindo a utilização de nomes iguais em partes diferentes de um mesmo código.
+
+Quando uma variável é definida de modo global, ou seja, no módulo, ela fica disponível à todos dentro daquele
+módulo, e para ser alterada dentro de uma função, é necessário usar a instrução 'GLOBAL' e o nome da variável.
