@@ -15,7 +15,7 @@ def lista_de_argumentos(*args):
 def lista_de_argumentos_associativos(**kwargs):
     print(kwargs)
 
-def argumentos(*args, *kwargs):
+def argumentos(*args, **kwargs):
     print(args)
     print(kwargs)
 
