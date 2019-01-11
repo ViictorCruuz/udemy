@@ -34,12 +34,11 @@ def func():
 func()
 
 
-x = 20
-def funcX():
-    global x
-    return x
-
-print(funcX())
+var = 30
+def funcao():
+    global var
+    return var
+print(funcao())
 
 
 

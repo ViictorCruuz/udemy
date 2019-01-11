@@ -69,15 +69,14 @@ da função.
 ou seja, essa é a sintaxe para passarmos uma lista de valores >>> def func(*args) <<<... da mesma forma, todos os
 parâmetros precedidos por 2 asteriscos >>> (**kwargs) <<< poderá receber um conjunto de argumentos nomeados, "argumentos
  nomeados é quando associamos o nome do argumento com o valor", logo, nós temos que esse tipo de envio irá resultar numa
- estrutura do tipo
-dicionário.
+ estrutura do tipo dicionário.
 
 ====================================================================================================================
             DESEMPACOTAMENTO I
 
 Empacotar é adicionar um conjunto de valores à uma lista.
 Dizer que há valores empacotados, significar dizer que temos uma estrutura do tipo lista, tupla ou dicionário que contém
-valores.
+alguns valores.
 
 Desempacotamento é a extração dos elementos contidos (agrupados ou empacotados) numa estrutura.
 

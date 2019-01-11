@@ -90,9 +90,115 @@ inicialmente:
 
 # RESPONDIDO :)
 
+"""
+7) Escreva um algoritmo capaz de receber uma quantidade variável de parâmetros. Em seguida, imprima os parâmetros recebidos na tela:
+"""
+
+# def n_parametros(*args):
+#     print(args)
+
+# n_parametros('bom dia', 'boa tarde', 'boa noite')
+
+# RESPONDIDO :)
+
+"""
+8) Escreva um algoritmo capaz de receber uma quantidade variável de parâmetros que estejam associados a uma chave. Em seguida, imprima na tela o nome da chave e o respectivo valor:
+"""
+
+# def n_parametros(**kwargs):
+#     cadastro = {"nome": "Victor",
+#                 "sobrenome":"Cruz",
+#                 "idade": 20
+#     }
+
+    # print(cadastro)
+    # print(kwargs)
+
+# n_parametros(a=10, b=20, c=30, d=40, e=50)
+
+# RESOLVIDO :)
+
+"""
+9) Considere o trecho de código a seguir.
+
+    def func(a, b, c, d)
+        print(a+b+c+d)
+    lista = 1,2,3,4
+
+Invoque a função func(), passando como argumento os valores contidos em lista, com a respectiva ordem, de forma a 
+utilizar o conceito de desempacotamento:
+"""
+
+# def func(a, b, c, d):
+#     print(a, b, c, d)
+
+# lista = 1,2,3,4
+
+# func(*lista)
+
+# RESOLVIDO :)
+
+"""
+10) Escreva um algoritmo que encontre o maior dentre 3 números. Para facilitar a resolução do exercício utilize funções.
+"""
+
+#
+# l_ = lista
+# l_.sort()
+#
+# print(l_[len(l_)-1])
+# print(l_[-1])
+
+
+# def acha_maior(lista):
+#     maior_numero = lista[0]
+#
+#     for x in lista:
+#         if x > maior_numero:
+#             maior_numero = x
+#
+#     return maior_numero
+#
+# print(acha_maior([5, 2, 10, 8]))
+# print(acha_maior([50, 22, 101, 89]))
+# print(acha_maior([55, 12, 0, 38]))
+
+
+# numero_1 é 15
+# intervalo é de 12 à 34
 
 
 
 
 
 
+# def inter(intervalo, numero_1):
+#     if numero_1 > intervalo[0] and numero_1 < intervalo[1]:
+#         return True
+#     else:
+#         return False
+
+
+# def inter(intervalo, numero_1):
+#     return numero_1 > intervalo[0] and numero_1 < intervalo[1]
+#
+#
+# # return True or False
+#
+#
+# intervalo = (12, 34)
+# numero_1 = 15
+# numero_2 = 50
+#
+#
+# print(inter(intervalo, numero_1))
+# print(inter(intervalo, numero_2))
+
+
+def deduplica(input):
+
+
+ordenada = []
+items = [1, 2, 3, 3, 3, 3, 4, 5]
+print(deduplica(items))
+# [1, 2, 3, 4, 5]
