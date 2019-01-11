@@ -195,10 +195,28 @@ utilizar o conceito de desempacotamento:
 # print(inter(intervalo, numero_2))
 
 
-def deduplica(input):
+# def deduplica(input):
+#     lista_ordenada = []
+#     for i in items:
+#         if i not in lista_ordenada:
+#             lista_ordenada.append(i)
 
 
-ordenada = []
-items = [1, 2, 3, 3, 3, 3, 4, 5]
-print(deduplica(items))
+
+    # return lista_ordenada
+
+
+# items = [1, 2, 3, 3, 3, 3, 4, 5]
+# print(deduplica(items))
 # [1, 2, 3, 4, 5]
+
+
+
+lista = "1234abcd"
+
+def inversao(inversao):
+
+    # lista = inversao[::-1]
+    print(lista)
+
+inversao(lista)
