@@ -212,11 +212,47 @@ utilizar o conceito de desempacotamento:
 
 
 
+# lista = "1234abcd"
+#
+# def inversao(inversao):
+#
+#     lista = inversao[::-1]
+#     print(lista)
+#
+# inversao(lista)
+
+
 lista = "1234abcd"
 
-def inversao(inversao):
+def inverter(lista):
+    var = len(lista)
+    print(var)
 
-    # lista = inversao[::-1]
-    print(lista)
+    nova_lista = ""
+    while var >= 1:
+        var -= 1
+        nova_lista += lista[var]
 
-inversao(lista)
+    print(nova_lista)
+
+inverter(lista)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
