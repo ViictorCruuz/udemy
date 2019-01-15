@@ -129,12 +129,12 @@ Invoque a função func(), passando como argumento os valores contidos em lista,
 utilizar o conceito de desempacotamento:
 """
 
-# def func(a, b, c, d):
-#     print(a, b, c, d)
+def func(a, b, c, d):
+    print(a, b, c, d)
 
-# lista = 1,2,3,4
+lista = 1,2,3,4
 
-# func(*lista)
+func(*lista)
 
 # RESOLVIDO :)
 
@@ -142,7 +142,7 @@ utilizar o conceito de desempacotamento:
 10) Escreva um algoritmo que encontre o maior dentre 3 números. Para facilitar a resolução do exercício utilize funções.
 """
 
-#
+
 # l_ = lista
 # l_.sort()
 #
@@ -150,18 +150,18 @@ utilizar o conceito de desempacotamento:
 # print(l_[-1])
 
 
-# def acha_maior(lista):
-#     maior_numero = lista[0]
-#
-#     for x in lista:
-#         if x > maior_numero:
-#             maior_numero = x
-#
-#     return maior_numero
-#
-# print(acha_maior([5, 2, 10, 8]))
-# print(acha_maior([50, 22, 101, 89]))
-# print(acha_maior([55, 12, 0, 38]))
+def acha_maior(lista):
+    maior_numero = lista[0]
+
+    for x in lista:
+        if x > maior_numero:
+            maior_numero = x
+
+    return maior_numero
+
+print(acha_maior([5, 2, 10, 8]))
+print(acha_maior([50, 22, 101, 89]))
+print(acha_maior([55, 12, 0, 38]))
 
 
 # numero_1 é 15
@@ -172,110 +172,110 @@ utilizar o conceito de desempacotamento:
 ## VERIFICAR SE UM NÚMERO ESTÁ DENTRO DE UM INTERVALO
 
 
-# def inter(intervalo, numero_1):
-#     if numero_1 > intervalo[0] and numero_1 < intervalo[1]:
-#         return True
-#     else:
-#         return False
+def inter(intervalo, numero_1):
+    if numero_1 > intervalo[0] and numero_1 < intervalo[1]:
+        return True
+    else:
+        return False
 
 
-# def inter(intervalo, numero_1):
-#     return numero_1 > intervalo[0] and numero_1 < intervalo[1]
-#
-#
-# # return True or False
-#
-#
-# intervalo = (12, 34)
-# numero_1 = 15
-# numero_2 = 50
-#
-#
-# print(inter(intervalo, numero_1))
-# print(inter(intervalo, numero_2))
+def inter(intervalo, numero_2):
+    return numero_2 > intervalo[0] and numero_2 < intervalo[1]
+
+
+# return True or False
+
+
+intervalo = (12, 34)
+numero_1 = 15
+numero_2 = 50
+
+
+print(inter(intervalo, numero_1))
+print(inter(intervalo, numero_2))
 
 
 ## EXCLUI ITENS DUPLICADOS DE UMA LISTA
 
 #
-# def deduplica(input):
-#     lista_ordenada = []
-#     for i in items:
-#         if i not in lista_ordenada:
-#             lista_ordenada.append(i)
-#
-#
-#
-#     return lista_ordenada
-#
-#
-# items = [1, 2, 3, 3, 3, 3, 4, 5, 6, 7, 7, 3, 8, 1,2,4,2,]
-# print(deduplica(items))
+def deduplica(input):
+    lista_ordenada = []
+    for i in items:
+        if i not in lista_ordenada:
+            lista_ordenada.append(i)
+
+
+
+    return lista_ordenada
+
+
+items = [1, 2, 3, 3, 3, 3, 4, 5, 6, 7, 7, 3, 8, 1, 2, 4, 2, 9, 4, 10]
+print(deduplica(items))
 # # [1, 2, 3, 4, 5]
 
 
 ## LISTA INVERTIDA USANDO UMA FUNÇÃO DO PYTHON
 
 
-# lista = "1234abcd"
-#
-# def inversao(inversao):
-#
-#     lista = inversao[::-1]
-#     print(lista)
-#
-# inversao(lista)
+lista = "1234abcd"
+
+def inversao(inversao):
+
+    lista = inversao[::-1]
+    print(lista)
+
+inversao(lista)
 
 
 
 ## LISTA INVERTIDA MANUALMENTE
 
-# lista = [1, 2, 3, 4, 5, 6, "a", "b", "c", "d", "e", "f"]
-#
-# def inverter(lista):
-#     var = len(lista)
-#
-#     nova_lista = []
-#     while var >= 1:
-#         var -= 1
-#         nova_lista.append(lista[var])
-#
-#     return nova_lista
-#
-# print(inverter(lista))
+lista = [1, 2, 3, 4, 5, 6, "a", "b", "c", "d", "e", "f"]
+
+def inverter(lista):
+    var = len(lista)
+
+    nova_lista = []
+    while var >= 1:
+        var -= 1
+        nova_lista.append(lista[var])
+
+    return nova_lista
+
+print(inverter(lista))
 
 
 ## VERIFICA QUANTAS LETRAS MAIÚSCULAS E MINÚSCULAS TEM EM UMA STRING
 
 
-# string = "Seja Muito Bem Vindo ao Curso de Python"
-#
-# def maiuscula_minuscila(string):
-#     maiuscula = 0
-#     minuscula = 0
-#
-#     for l in string:
-#         if l == l.upper() and l != " ":
-#             maiuscula += 1
-#         elif l != " ":
-#             minuscula += 1
-#
-#
-#
-#     print("Nesta frase tem ", maiuscula, "letras maiúsculas")
-#     print("Nesta frase tem ", minuscula, "letras minúsculas")
-#
-# maiuscula_minuscila(string)
+string = "Seja Bem Vindo à Geru Novato"
 
-# def fatorial(x):
-#     n = x
-#
-#     while x > 1:
-#         x -= 1
-#         n = n*x
-#
-#     return n
-# print(fatorial(5))
+def maiuscula_minuscila(string):
+    maiuscula = 0
+    minuscula = 0
+
+    for l in string:
+        if l == l.upper() and l != " ":
+            maiuscula += 1
+        elif l != " ":
+            minuscula += 1
+
+
+
+    print("Nesta frase tem ", maiuscula, "letras maiúsculas")
+    print("Nesta frase tem ", minuscula, "letras minúsculas")
+
+maiuscula_minuscila(string)
+
+def fatorial(x):
+    n = x
+
+    while x > 1:
+        x -= 1
+        n = n*x
+
+    return n
+print(fatorial(5))
 
 # def fatorial(x):
 #     fat = 1
@@ -296,25 +296,4 @@ utilizar o conceito de desempacotamento:
 #
 # print(fatorial_rec_2(5))
 
-def primo_com_return(x):
-    if (x == 1):
-        return 1
-    for i in range(2, x + 1, 1):
-        if (i == x):
-            return 1
-        if (x % i == 0):
-            break
-    return 0
 
-
-def lista_primo(*lista):
-    lista_primos = []
-    for i in range(len(lista)):
-        if (primo_com_return(int(lista[i]))):
-            lista_primos.append(int(lista[i]))
-
-    return lista_primos
-
-
-lista = [1, 4, 3, 7, 8, 10]
-print(lista_primo(*lista))
