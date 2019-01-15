@@ -197,21 +197,21 @@ utilizar o conceito de desempacotamento:
 
 ## EXCLUI ITENS DUPLICADOS DE UMA LISTA
 
-
+#
 # def deduplica(input):
 #     lista_ordenada = []
 #     for i in items:
 #         if i not in lista_ordenada:
 #             lista_ordenada.append(i)
-
-
-
-    # return lista_ordenada
-
-
-# items = [1, 2, 3, 3, 3, 3, 4, 5]
+#
+#
+#
+#     return lista_ordenada
+#
+#
+# items = [1, 2, 3, 3, 3, 3, 4, 5, 6, 7, 7, 3, 8, 1,2,4,2,]
 # print(deduplica(items))
-# [1, 2, 3, 4, 5]
+# # [1, 2, 3, 4, 5]
 
 
 ## LISTA INVERTIDA USANDO UMA FUNÇÃO DO PYTHON
@@ -244,38 +244,77 @@ utilizar o conceito de desempacotamento:
 #
 # print(inverter(lista))
 
-string = "Seja Bem Vindo à Geru novato"
 
-def maiuscula_minuscila(string):
-    maiuscula = 0
-    minuscula = 0
-
-    for l in string:
-        if l == l.upper() and l.upper() != " ":
-            maiuscula += 1
-        elif l == l.lower() and l != " ":
-            minuscula += 1
+## VERIFICA QUANTAS LETRAS MAIÚSCULAS E MINÚSCULAS TEM EM UMA STRING
 
 
+# string = "Seja Muito Bem Vindo ao Curso de Python"
+#
+# def maiuscula_minuscila(string):
+#     maiuscula = 0
+#     minuscula = 0
+#
+#     for l in string:
+#         if l == l.upper() and l != " ":
+#             maiuscula += 1
+#         elif l != " ":
+#             minuscula += 1
+#
+#
+#
+#     print("Nesta frase tem ", maiuscula, "letras maiúsculas")
+#     print("Nesta frase tem ", minuscula, "letras minúsculas")
+#
+# maiuscula_minuscila(string)
 
-    print("Nesta frase tem ", maiuscula, "letras maiúsculas")
-    print("Nesta frase tem ", minuscula, "letras minúsculas")
+# def fatorial(x):
+#     n = x
+#
+#     while x > 1:
+#         x -= 1
+#         n = n*x
+#
+#     return n
+# print(fatorial(5))
 
-print(maiuscula_minuscila(string))
+# def fatorial(x):
+#     fat = 1
+#     for i in range(1, x+1):
+#         fat = fat * i
+#     return fat
+#
+# print(fatorial(10))
+
+# def fatorial_rec(n):
+#     return n * fatorial_rec(n-1) if n > 1 else 1
+
+# def fatorial_rec_2(n):
+#     if n == 1:
+#         return 1
+#     else:
+#         return n * fatorial_rec_2(n - 1)
+#
+# print(fatorial_rec_2(5))
+
+def primo_com_return(x):
+    if (x == 1):
+        return 1
+    for i in range(2, x + 1, 1):
+        if (i == x):
+            return 1
+        if (x % i == 0):
+            break
+    return 0
 
 
+def lista_primo(*lista):
+    lista_primos = []
+    for i in range(len(lista)):
+        if (primo_com_return(int(lista[i]))):
+            lista_primos.append(int(lista[i]))
+
+    return lista_primos
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+lista = [1, 4, 3, 7, 8, 10]
+print(lista_primo(*lista))
