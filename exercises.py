@@ -169,7 +169,7 @@ utilizar o conceito de desempacotamento:
 
 
 
-
+## VERIFICAR SE UM NÚMERO ESTÁ DENTRO DE UM INTERVALO
 
 
 # def inter(intervalo, numero_1):
@@ -195,6 +195,9 @@ utilizar o conceito de desempacotamento:
 # print(inter(intervalo, numero_2))
 
 
+## EXCLUI ITENS DUPLICADOS DE UMA LISTA
+
+
 # def deduplica(input):
 #     lista_ordenada = []
 #     for i in items:
@@ -211,6 +214,8 @@ utilizar o conceito de desempacotamento:
 # [1, 2, 3, 4, 5]
 
 
+## LISTA INVERTIDA USANDO UMA FUNÇÃO DO PYTHON
+
 
 # lista = "1234abcd"
 #
@@ -222,23 +227,41 @@ utilizar o conceito de desempacotamento:
 # inversao(lista)
 
 
-lista = "1234abcd"
 
-def inverter(lista):
-    var = len(lista)
-    print(var)
+## LISTA INVERTIDA MANUALMENTE
 
-    nova_lista = ""
-    while var >= 1:
-        var -= 1
-        nova_lista += lista[var]
+# lista = [1, 2, 3, 4, 5, 6, "a", "b", "c", "d", "e", "f"]
+#
+# def inverter(lista):
+#     var = len(lista)
+#
+#     nova_lista = []
+#     while var >= 1:
+#         var -= 1
+#         nova_lista.append(lista[var])
+#
+#     return nova_lista
+#
+# print(inverter(lista))
 
-    print(nova_lista)
+string = "Seja Bem Vindo à Geru novato"
 
-inverter(lista)
+def maiuscula_minuscila(string):
+    maiuscula = 0
+    minuscula = 0
+
+    for l in string:
+        if l == l.upper() and l.upper() != " ":
+            maiuscula += 1
+        elif l == l.lower() and l != " ":
+            minuscula += 1
 
 
 
+    print("Nesta frase tem ", maiuscula, "letras maiúsculas")
+    print("Nesta frase tem ", minuscula, "letras minúsculas")
+
+print(maiuscula_minuscila(string))
 
 
 
