@@ -147,3 +147,9 @@ linguagens modernas, permitindo a utilização de nomes iguais em partes diferen
 
 Quando uma variável é definida de modo global, ou seja, no módulo, ela fica disponível à todos dentro daquele
 módulo, e para ser alterada dentro de uma função, é necessário usar a instrução 'GLOBAL' e o nome da variável.
+
+====================================================================================================================
+            ITERAÇÃO
+
+É o processo de repetição na qual um bloco de instrução é executado enquanto uma determinada condição for atendida
+
