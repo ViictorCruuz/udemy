@@ -153,3 +153,53 @@ módulo, e para ser alterada dentro de uma função, é necessário usar a instr
 
 É o processo de repetição na qual um bloco de instrução é executado enquanto uma determinada condição for atendida
 
+instrução while >>> while quer dizer enquanto ... ou seja ... nós passamos uma condição para nossa instrução
+e enquanto a nossa condição for TRUE, ele retorna o loop e faz a verificação novamente, em nosso bloco de instruções
+devemos sempre colocar de forma que nossa condição seja alcançada, caso contrário entra em um loop infinito
+e isso dependendo do que estamos desenvolvendo pode se tornar um problema.
+
+Quando temos uma estrutura " IF " apenas uma das condições são executadas, ou seja, se a condição for verdadeira
+então será executado o que tiver no bloco de instrução IF, e se a instrução for " FALSE " então será executado
+o bloco de instrução da condição ELSE.
+
+Já com o uso da instrução "WHILE" eu posso utilizar o ELSE porque enquanto a minha condição for verdade, ele vai fazer
+novamente o loop e quando não for mais irá executar a instrução do bloco ELSE.
+
+====================================================================================================================
+            FOR LOOP
+
+É uma estrutura de repetição que executa um ciclo para cada elemento do objeto que está sendo iterado.
+Se por exemplo eu tiver uma lista de [1,2,3,4,5,6,7,8,9,10] e rodar a estrutura abaixo, deverá ser impresso na tela o
+seguinte resultado:
+
+Exemplo:
+
+                     lista = [1,2,3,4,5,6,7,8,9,10]
+
+                     for i in lista:
+                        print(i)
+
+                     Saída:
+                     1
+                     2
+                     3
+                     4
+                     5
+                     6
+                     7
+                     8
+                     9
+                     10
+
+====================================================================================================================
+            FUNÇÃO RANGE
+
+Retorna uma série numérica no intervalo enviado e cujo os elementos contigos serão gerados sob demanda
+
+]x[ >>> Sempre que tivermos um número entre os colchetes opostos, isso quer dizer que todos os números contidos no 
+intervalo estão inclusos, menos os dois extremos.
+
+            FUNÇÃO RANGE E LAÇO FOR
+
+
+   

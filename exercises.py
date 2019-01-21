@@ -150,18 +150,18 @@ utilizar o conceito de desempacotamento:
 # print(l_[-1])
 
 
-def acha_maior(lista):
-    maior_numero = lista[0]
+# def acha_maior(lista):
+#     maior_numero = lista[0]
 
-    for x in lista:
-        if x > maior_numero:
-            maior_numero = x
+#     for x in lista:
+#         if x > maior_numero:
+#             maior_numero = x
 
-    return maior_numero
+#     return maior_numero
 
-print(acha_maior([5, 2, 10, 8]))
-print(acha_maior([50, 22, 101, 89]))
-print(acha_maior([55, 12, 0, 38]))
+# print(acha_maior([5, 2, 10, 8]))
+# print(acha_maior([50, 22, 101, 89]))
+# print(acha_maior([55, 12, 0, 38]))
 
 
 # numero_1 é 15
@@ -172,77 +172,77 @@ print(acha_maior([55, 12, 0, 38]))
 ## VERIFICAR SE UM NÚMERO ESTÁ DENTRO DE UM INTERVALO
 
 
-def inter(intervalo, numero_1):
-    if numero_1 > intervalo[0] and numero_1 < intervalo[1]:
-        return True
-    else:
-        return False
+# def inter(intervalo, numero_1):
+#     if numero_1 > intervalo[0] and numero_1 < intervalo[1]:
+#         return True
+#     else:
+#         return False
 
 
-def inter(intervalo, numero_2):
-    return numero_2 > intervalo[0] and numero_2 < intervalo[1]
+# def inter(intervalo, numero_2):
+#     return numero_2 > intervalo[0] and numero_2 < intervalo[1]
 
 
 # return True or False
 
 
-intervalo = (12, 34)
-numero_1 = 15
-numero_2 = 50
+# intervalo = (12, 34)
+# numero_1 = 15
+# numero_2 = 50
 
 
-print(inter(intervalo, numero_1))
-print(inter(intervalo, numero_2))
+# print(inter(intervalo, numero_1))
+# print(inter(intervalo, numero_2))
 
 
 ## EXCLUI ITENS DUPLICADOS DE UMA LISTA
 
-#
-def deduplica(input):
-    lista_ordenada = []
-    for i in items:
-        if i not in lista_ordenada:
-            lista_ordenada.append(i)
+# #
+# def deduplica(input):
+#     lista_ordenada = []
+#     for i in items:
+#         if i not in lista_ordenada:
+#             lista_ordenada.append(i)
 
 
 
-    return lista_ordenada
+#     return lista_ordenada
 
 
-items = [1, 2, 3, 3, 3, 3, 4, 5, 6, 7, 7, 3, 8, 1, 2, 4, 2, 9, 4, 10]
-print(deduplica(items))
+# items = [1, 2, 3, 3, 3, 3, 4, 5, 6, 7, 7, 3, 8, 1, 2, 4, 2, 9, 4, 10]
+# print(deduplica(items))
 # # [1, 2, 3, 4, 5]
 
 
 ## LISTA INVERTIDA USANDO UMA FUNÇÃO DO PYTHON
 
 
-lista = "1234abcd"
+# lista = "1234abcd"
 
-def inversao(inversao):
+# def inversao(inversao):
 
-    lista = inversao[::-1]
-    print(lista)
+#     lista = inversao[::-1]
+#     print(lista)
 
-inversao(lista)
+# inversao(lista)
 
 
 
 ## LISTA INVERTIDA MANUALMENTE
 
-lista = [1, 2, 3, 4, 5, 6, "a", "b", "c", "d", "e", "f"]
+# lista = [1, 2, 3, 4, 5, 6, "a", "b", "c", "d", "e", "f"]
 
-def inverter(lista):
-    var = len(lista)
+# def inverter(lista):
+#     var = len(lista)
 
-    nova_lista = []
-    while var >= 1:
-        var -= 1
-        nova_lista.append(lista[var])
+#     nova_lista = []
+#     while var >= 1:
+#         var -= 1
+#         nova_lista.append(lista[var])
 
-    return nova_lista
+#     return nova_lista
 
-print(inverter(lista))
+# print(inverter(lista))
 
 
 ## VERIFICA QUANTAS LETRAS MAIÚSCULAS E MINÚSCULAS TEM EM UMA STRING
@@ -267,15 +267,15 @@ def maiuscula_minuscila(string):
 
 maiuscula_minuscila(string)
 
-def fatorial(x):
-    n = x
+# def fatorial(x):
+#     n = x
 
-    while x > 1:
-        x -= 1
-        n = n*x
+#     while x > 1:
+#         x -= 1
+#         n = n*x
 
-    return n
-print(fatorial(5))
+#     return n
+# print(fatorial(5))
 
 # def fatorial(x):
 #     fat = 1
