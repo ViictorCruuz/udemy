@@ -5,7 +5,7 @@ tel.values() - Returns only values within my dictionary.
 
 tel.popitem() - Mostra uma "chave" e um "valor" e em seguida já o deleta
 
-36458899 in tel - Checa se este número está contigo dentro do dicionário
+36458899 in tel - Checa se este número está contido dentro do dicionário
 tel.update(tel2) - Faz a mesclagem de dois dicionários
 
 ====================================================================================================================
@@ -194,10 +194,23 @@ Exemplo:
 ====================================================================================================================
             FUNÇÃO RANGE
 
-Retorna uma série numérica no intervalo enviado e cujo os elementos contigos serão gerados sob demanda
+Retorna uma série numérica no intervalo enviado e cujo os elementos contidos serão gerados sob demanda
 
 ]x[ >>> Sempre que tivermos um número entre os colchetes opostos, isso quer dizer que todos os números contidos no 
 intervalo estão inclusos, menos os dois extremos.
+
+====================================================================================================================
+            INSTRUÇÃO BREAK
+
+É a instrução que interrompe a execução do laço de repetição na qual está contida, isso irá ocorrer porque verificamos
+uma condição e vemos que já atingimos nosso objetivo. Logo, não há razão para continuarmos executando um laço de repetição
+ou então continuar executando o ciclo. Assim, nós precisamos de uma função que finalize o nosso laço de repetição,
+ ou mesmo, que finalize um único ciclo.
+
+ É importante lembrar que, toda vez que pudermos interromper um laço de repetição, assim devemos fazer.
+ Até porque, quando nós interrompemos um laço de repetição, economizamos recursos do computador e também tornamos a nossa
+ aplicação mais rápida.
+
 
 
 
