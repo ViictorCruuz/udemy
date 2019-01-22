@@ -199,7 +199,7 @@ Retorna uma série numérica no intervalo enviado e cujo os elementos contigos s
 ]x[ >>> Sempre que tivermos um número entre os colchetes opostos, isso quer dizer que todos os números contidos no 
 intervalo estão inclusos, menos os dois extremos.
 
-            FUNÇÃO RANGE E LAÇO FOR
+
 
 
    
