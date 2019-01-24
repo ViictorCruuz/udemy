@@ -161,7 +161,7 @@ utilizar o conceito de desempacotamento:
 
 # print(acha_maior([5, 2, 10, 8]))
 # print(acha_maior([50, 22, 101, 89]))
-# print(acha_maior([55, 12, 0, 38]))
+# print(acha_maior([55, 12, 0, 38]ii))
 
 
 # numero_1 é 15
@@ -248,22 +248,23 @@ utilizar o conceito de desempacotamento:
 ## VERIFICA QUANTAS LETRAS MAIÚSCULAS E MINÚSCULAS TEM EM UMA STRING
 
 
-string = "Seja Bem Vindo à Geru Novato"
+string = "'Seja Bem Vindo à Geru Novato1,'"
 
 def maiuscula_minuscila(string):
     maiuscula = 0
     minuscula = 0
+    # string = "Seja Bem Vindo à Geru Novato1"
 
     for l in string:
-        if l == l.upper() and l != " ":
+        if l.isupper():
             maiuscula += 1
-        elif l != " ":
+        elif l.islower():
             minuscula += 1
 
 
 
-    print("Nesta frase tem ", maiuscula, "letras maiúsculas")
-    print("Nesta frase tem ", minuscula, "letras minúsculas")
+    print("Nesta frase:", string, "tem", maiuscula, "letras maiúsculas")
+    print("E",minuscula, "letras minúsculas")
 
 maiuscula_minuscila(string)
 

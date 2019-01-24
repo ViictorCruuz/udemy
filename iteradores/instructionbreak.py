@@ -1,7 +1,8 @@
-i = 10
+print("Antes de entrar no laco")
 
-while i < 100:
-    i = i + 1
-    print(i)
-    if True:
+for item in range(10):
+    print(item)
+    if(item == 5):
+        print("A condicao estabelecida retornou true")
         break
+print("Depois de ter entrado no laco")
