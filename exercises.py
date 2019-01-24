@@ -248,9 +248,9 @@ utilizar o conceito de desempacotamento:
 ## VERIFICA QUANTAS LETRAS MAIÚSCULAS E MINÚSCULAS TEM EM UMA STRING
 
 
-string = "'Seja Bem Vindo à Geru Novato1,'"
+string = "'Seja Bem Vindo à Geru Novato KKK'"
 
-def maiuscula_minuscila(string):
+def maiuscula_minuscula(string):
     maiuscula = 0
     minuscula = 0
     # string = "Seja Bem Vindo à Geru Novato1"
@@ -266,7 +266,7 @@ def maiuscula_minuscila(string):
     print("Nesta frase:", string, "tem", maiuscula, "letras maiúsculas")
     print("E",minuscula, "letras minúsculas")
 
-maiuscula_minuscila(string)
+maiuscula_minuscula(string)
 
 # def fatorial(x):
 #     n = x
