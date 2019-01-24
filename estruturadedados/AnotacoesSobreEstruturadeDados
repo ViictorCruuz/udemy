@@ -1,0 +1,66 @@
+            ESTRUTURA DE DADOS
+
+É qualquer sequência de objetos/elementos em qualquer ordem. Todas as estruturas de dados
+são também listas
+
+A maior parte das estruturas de dados no Python, foram incorporadas a sintaxe da linguagem,
+ou seja, quando nós vamos manipular uma tupla, um dicionário ou uma lista, tudo isso está
+incorporado na linguagem. Logo, nós temos uma situação onde nós não conseguimos distinguir
+muito bem o que representa as estruturas de dados e o que é a sintaxe da linguagem.
+
+>>> Teremos uma visão geral sobre:
+
+- Lista
+- Pilha
+- Array / Matriz / Vetor
+- Set (grupo)
+- Dicionário
+- Árvore
+
+As sete principais estruturas que usamos no nosso dia a dia direta ou indiretamente
+===================================================================================================
+            LISTAS
+
+É qualquer sequência de objetos/elementos em qualquer ordem. Todas as estruturas de dados
+são também listas
+
+A lista pode ser considerada a estrutura principal e a mãe de todas as outras estruturas, 
+até porque, todas as estruturas de dados tem como objetivo armazenar um conjunto de informações
+geralmente do mesmo tipo. Logo, se nós temos diversas informações numa mesma estrutura,
+nós sempre teremos como estrutura primária uma lista.
+
+No desenvolvimento de um software, é muito comum manipular-mos informações mais das mais
+diversas a fim de catalogar e posteriormente processar essas informações. É muito comum
+utilizarmos listas para guardar um conjunto de informações do mesmo tipo.
+
+Exemplo de lista com informações semelhantes, ou do mesmo tipo:
+
+> Lista de e-mails
+> Lista de telefones
+> Lista de sites
+> Lista de músicas
+
+Nesse exemplo, temos que algumas listas possuem características que fazem as mesmas serem
+diferentes de outras.
+
+Por esta razão é que o Python já nos oferece diversas estruturas de listas e essas estruturas
+que já vem incorporadas à linguagem são as estruturas mais simples e que nós mais utilizamos
+
+A característica principal de uma lista é que nós podemos " INCLUIR " e " EXCLUIR " itens.
+
+1. Estrutura mutável cuja a ordem natural é estabelecida pela ordem de entrada.
+2. Novos itens sempre serão adicionados após o último item da lista.
+3. O primeiro item adicionado à lista sempre será o primeiro elemento da estrutura.
+
+===================================================================================================
+            ESTRUTURA DE DADOS 
+                PILHA
+
+Para entendermos a estrutura de dados pilha, basta lembrar de empilhar livros mesmo, ou seja,
+colocar livros um em cima do outro.         
+
+Dessa forma, temos que sempre o nosso primeiro item da pilha será o último e o último será o primeiro.
+
+1. É um conjunto de elementos adicionados um sobre o outro.
+2. O último elemento a entrar será o primeiro a sair.
+3. O primeiro elemento a entrar será o último da lista.
