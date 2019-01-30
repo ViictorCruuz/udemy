@@ -66,3 +66,49 @@ ou então continuar executando o ciclo. Assim, nós precisamos de uma função q
 A instrução " continue " é bem semelhante ao " break ", a diferença é que quando nós atingimos a nossa condição
 ele interrompe a execução de apenas um único ciclo, ou seja, finaliza uma repetição, porém, ela não termina a 
 execução do nosso laço
+
+====================================================================================================================
+            GERADORES
+
+Os geradores são iteradores, mas vocÊ só pode iterá-los uma vez. É porque eles não armazenam todos os valores na memória,
+eles geram os valores em tempo real. Você os usa iterando sobre eles, seja com um loop 'for' ou passando-os para qualquer
+função ou construção que seja iterada. Na maiora das vezes, generators são implementados como funções. No entando, 
+eles não têm return valor, eles yield o fazem. Aqui está um exemplo simples de uma generator função.
+
+====================================================================================================================
+            ITERS
+
+>>> Iterável:
+      Um 'iterable' é qualquer objeto em Python que tenha um __iter__ ou um __getitem__ método definido que retorne
+      um iterador ou possa obter índices. Em resumo, iterável qualquer objeto pode nos fornecer um iterador.
+
+>>> Iterador:
+      Um iterador é qualquer objeto no Python que tenha um next ou __next__ método definido.
+
+>>> Iteração:
+      É o processo de pegar um item de algo, por exemplo, uma lista. Quando usamos um loop para fazer um loop 
+      sobre algo, ele é chamado de iteração. É o nome dado ao processo em si.
+
+
+>>>>>>>>>>  EXEMPLO  <<<<<<<<<<<
+
+In [58]: def generator_function():
+    ...:     for i in range(10):
+    ...:         yield i
+    ...:         
+
+In [61]: for item in generator_function():
+    ...:     print(item)
+    ...:     
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+

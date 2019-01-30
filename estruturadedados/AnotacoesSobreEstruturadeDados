@@ -122,3 +122,32 @@ um item igual ao que já tenha na nossa lista.
 1. Estrutura de dados semelhante a uma lista.
 2. Tem como princípio contar uma lista de valores diferentes.
 3. É uma lista sem itens repetidos.
+
+===================================================================================================
+            ESTRUTURA DE DADOS
+                DICIONÁRIO 
+
+Estrutura na qual cada item possui uma chave única e que pode ser de qualquer tipo 
+No dicionário não podemos ter duas chaves com o mesmo valor, e se por acaso colocarmos o mesmo valor
+em duas chaves diferentes, então o dicionário definirá o segundo valor igual como o que vale.
+
+Basicamente é {"key": "value"}
+
+===================================================================================================
+            ESTRUTURA DE DADOS
+                ÁRVORE
+
+Desenho da árvore:
+
+Nível 0  >>>        A
+
+Nível 1  >>>    B       C
+
+Nível 2  >>>  D   E   F   G
+
+Então podemos dizer que A é a nossa raíz, B e C são nós/filhos de A e que D e E são nós/filhos
+de B, F e G são nós/filhos de C.
+
+1. Raiz - Elemento partencente ao nível um. Toda árvore terá sempre uma única raíz.
+2. Nó/Filho - Elemento que foi adicionado a outro item.
+3. Nível - Propriedade que indica quantos nós estão acima de um filho.
