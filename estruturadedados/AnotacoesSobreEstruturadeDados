@@ -29,7 +29,7 @@ até porque, todas as estruturas de dados tem como objetivo armazenar um conjunt
 geralmente do mesmo tipo. Logo, se nós temos diversas informações numa mesma estrutura,
 nós sempre teremos como estrutura primária uma lista.
 
-No desenvolvimento de um software, é muito comum manipular-mos informações mais das mais
+No desenvolvimento de um software, é muito comum manipular-mos informações das mais
 diversas a fim de catalogar e posteriormente processar essas informações. É muito comum
 utilizarmos listas para guardar um conjunto de informações do mesmo tipo.
 
@@ -64,3 +64,61 @@ Dessa forma, temos que sempre o nosso primeiro item da pilha será o último e o
 1. É um conjunto de elementos adicionados um sobre o outro.
 2. O último elemento a entrar será o primeiro a sair.
 3. O primeiro elemento a entrar será o último da lista.
+
+===================================================================================================
+            ESTRUTURA DE DADOS
+                ARRAY
+
+Aqui no Python não comum trabalharmos com array, até existe algums situções onde nós fazemos uso,
+porém, para maior parte dos trabalhos, nós vamos utilizar o tipo de estrutura, "LIST" ou então
+uma outra estrutura chamada tupla.
+
+Os arrys são a única estrutura de lista que vem incorporada nas linguagens C e C++ junto a sintaxe
+da linguagem, ou seja, nós trabalhamos com array em C e C++ de uma forma bastante transparente.
+
+Nós podemos citar como características principais dos arrays, é que todo array possui um índice,
+todo array irá armazenar informações de um único tipo e a estrutura array ela possui uma quantidade
+de elementos finitos, ou seja, em tempo de execução nós não conseguimos adicionar ou então excluir 
+um elemento do array. Pra nós fazermos isso, nós somos obrigados a criar um outro array e então 
+migrar todos os elementos de um array para nosso novo array. Porém como podemos imaginar, essa 
+é uma estrutura bastante custosa, principalmente se nós tivermos um array com "10", "15" mil elementos.
+Se nós fôssemos resumir as características da estrutura array, nós temos que :
+
+>>> Todo array possui um índice numérico inteiro, então, nós conseguimos acessar todos os elementos
+do array passando o número do elemento que nós queremos.
+>>> Uma segunda característica é que um array pode ser declarado com quantas posições o nosso 
+computador suportar, porém todos os itens de um array sempre serão de um mesmo tipo.
+>>> Uma terceira característica do array, é o primeiro elemento, ele tem o índice igual a [0]. Logo
+nós temos que o último elemento ele terá o índice igual a quantidade de elementos que nosso array 
+possui menos uma unidade. Isso acontece porque o primeiro elemento do nosso array é o 0.
+
+1. É um conjunto de elementos finitos e definidos na sua declaração.
+2. O índice 0 é o primeiro elemento da lista.
+3. O índice do último elemento é o "total_de_itens-1".
+
+===================================================================================================
+            ESTRUTURA DE DADOS
+                TUPLA
+
+Tupla é algo "READ ONLY", ou seja, apenas leitura. 
+
+Na tupla nós podemos ter elementos de um mesmo tipo, como também podemos ter cada item de um tipo
+diferente.
+
+1. É uma lista declarada como uma constante.
+2. Não é possível adicionar, remover ou alterar elementos.
+3. Toda a tupla será um conjunto de objetos também imutáveis.
+
+===================================================================================================
+            ESTRUTURA DE DADOS
+                SET
+
+É uma estrutura de dados que funciona como um conjunto, podemos pensar nessa estrutura como se
+ela fosse uma lista, porém o que difere as duas é que o "SET" não pode ter itens repetidos.
+
+Nós podemos adicionar, remover e alterar um elemento a qualquer momento, desde que não coloquemos
+um item igual ao que já tenha na nossa lista.
+
+1. Estrutura de dados semelhante a uma lista.
+2. Tem como princípio contar uma lista de valores diferentes.
+3. É uma lista sem itens repetidos.
