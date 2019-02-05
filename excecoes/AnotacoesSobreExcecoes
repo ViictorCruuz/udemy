@@ -1,0 +1,53 @@
+            Exceções
+
+Toda exceção pode ser tratada, e o objetivo de tratá-la é tentar solucionar o problema ocorrido para
+que a aplicação possa continuar a execução.     
+
+O estudo das Exceções é divido em duas partes:
+
+1 >>> Tratamento de Exceções             |  2 >>> Levantamento de Exceções
+                                        |  é todo código que ao perceber um problema
+é todo código que identifica erros e    |   cria uma exceção avisando o programador
+ implementa uma solução evitando que a
+aplicação seja finalizada               |                         
+
+
+Exceções
+No Python, todas as exceções devem ser instâncias de uma classe derivada BaseException. Em uma
+tryinstrução com uma except cláusula que menciona uma classe específica, essa cláusula também manipula
+todas as classes de exceção derivadas dessa classe (mas não as classes de exceção das quais ela é derivada).
+Duas classes de exceção que não estão relacionadas por meio de subclasses nunca são equivalentes, mesmo que
+tenham o mesmo nome.
+
+As exceções internas listadas abaixo podem ser geradas pelo interpretador ou funções internas. Exceto
+quando mencionado, eles têm um “valor associado” indicando a causa detalhada do erro. Isso pode ser uma
+string ou uma tupla de vários itens de informação (por exemplo, um código de erro e uma string explicando
+o código). O valor associado é geralmente passado como argumentos para o construtor da classe de exceção.
+
+O código do usuário pode aumentar as exceções internas. Isso pode ser usado para testar um manipulador de
+exceções ou para relatar uma condição de erro “assim como” a situação na qual o intérprete gera a mesma exceção;
+mas cuidado, pois não há nada que impeça o código do usuário de gerar um erro inapropriado.
+
+As classes de exceção internas podem ter uma subclasse para definir novas exceções; programadores são encorajados
+a derivar novas exceções da Exception classe ou de uma de suas subclasses, e não de BaseException. Mais
+informações sobre como definir exceções estão disponíveis no Tutorial do Python, em Exceções definidas pelo usuário .
+
+Quando levantar (ou re-elevar) uma exceção em uma cláusula exceptou é automaticamente definida para a última
+exceção capturada; se a nova exceção não for tratada, o traceback que é eventualmente exibido incluirá as exceções
+de origem e a exceção final.finally__context__
+
+Ao levantar uma nova exceção (em vez de utilizar um nu raisepara re-elevar a excepção actualmente a ser tratado),
+o contexto excepção implícito pode ser suplementado com uma causa explícita utilizando fromcom raise:
+
+
+
+============================================================================================================
+            VALORES INVÁLIDOS
+
+Isso pode ocorrer quando nós estamos esperando de um usuário dados do tipo inteiro, e ele nos passa dados
+do tipo string.
+
+============================================================================================================
+
+
+
