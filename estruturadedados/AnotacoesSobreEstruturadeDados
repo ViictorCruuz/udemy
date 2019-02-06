@@ -49,6 +49,7 @@ que já vem incorporadas à linguagem são as estruturas mais simples e que nós
 A característica principal de uma lista é que nós podemos " INCLUIR " e " EXCLUIR " itens.
 
 1. Estrutura mutável cuja a ordem natural é estabelecida pela ordem de entrada.
+
 2. Novos itens sempre serão adicionados após o último item da lista.
 3. O primeiro item adicionado à lista sempre será o primeiro elemento da estrutura.
 

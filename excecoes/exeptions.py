@@ -34,3 +34,5 @@ number1 = input_int(("Write the first number: "))
 number2 = input_int(("Write the second number: "))
 
 print(number1 * number2)
+
+

@@ -5,39 +5,12 @@ que a aplicação possa continuar a execução.
 
 O estudo das Exceções é divido em duas partes:
 
-1 >>> Tratamento de Exceções             |  2 >>> Levantamento de Exceções
+1 >>> Tratamento de Exceções            |  2 >>> Levantamento de Exceções
                                         |  é todo código que ao perceber um problema
 é todo código que identifica erros e    |   cria uma exceção avisando o programador
- implementa uma solução evitando que a
+ implementa uma solução evitando que a  |
 aplicação seja finalizada               |                         
 
-
-Exceções
-No Python, todas as exceções devem ser instâncias de uma classe derivada BaseException. Em uma
-tryinstrução com uma except cláusula que menciona uma classe específica, essa cláusula também manipula
-todas as classes de exceção derivadas dessa classe (mas não as classes de exceção das quais ela é derivada).
-Duas classes de exceção que não estão relacionadas por meio de subclasses nunca são equivalentes, mesmo que
-tenham o mesmo nome.
-
-As exceções internas listadas abaixo podem ser geradas pelo interpretador ou funções internas. Exceto
-quando mencionado, eles têm um “valor associado” indicando a causa detalhada do erro. Isso pode ser uma
-string ou uma tupla de vários itens de informação (por exemplo, um código de erro e uma string explicando
-o código). O valor associado é geralmente passado como argumentos para o construtor da classe de exceção.
-
-O código do usuário pode aumentar as exceções internas. Isso pode ser usado para testar um manipulador de
-exceções ou para relatar uma condição de erro “assim como” a situação na qual o intérprete gera a mesma exceção;
-mas cuidado, pois não há nada que impeça o código do usuário de gerar um erro inapropriado.
-
-As classes de exceção internas podem ter uma subclasse para definir novas exceções; programadores são encorajados
-a derivar novas exceções da Exception classe ou de uma de suas subclasses, e não de BaseException. Mais
-informações sobre como definir exceções estão disponíveis no Tutorial do Python, em Exceções definidas pelo usuário .
-
-Quando levantar (ou re-elevar) uma exceção em uma cláusula exceptou é automaticamente definida para a última
-exceção capturada; se a nova exceção não for tratada, o traceback que é eventualmente exibido incluirá as exceções
-de origem e a exceção final.finally__context__
-
-Ao levantar uma nova exceção (em vez de utilizar um nu raisepara re-elevar a excepção actualmente a ser tratado),
-o contexto excepção implícito pode ser suplementado com uma causa explícita utilizando fromcom raise:
 
 
 
@@ -48,6 +21,43 @@ Isso pode ocorrer quando nós estamos esperando de um usuário dados do tipo int
 do tipo string.
 
 ============================================================================================================
+            TRATAMENTE DE MÚLTIPLAS EXCEÇÕES 
+
+Quando a execução do nosso código ocorre tudo bem dentro da instrução "try", então não precisa ser executada
+a instrução 'except'.
+
+Temos também quando a exceção é tratada, ou seja, dentro do nosso bloco de instrução 'try' ocorreu uma
+exceção então ele pula pro bloco de execução 'except' e começa a executar as linhas de código do except.
+
+E quando a instrção 'try' encontra um error porém esse erro não é tratado no 'except', então a execução
+de todo o nosso script é interrompida.
 
 
+O nosso código vem executando linha por linha e quando ele se depara com a instrução 'try'
+ele entra no bloco e tenta executar aquelas instruções, se por acaso ele levantar alguma exceção
+ele pula pro bloco de instrução que contém ('except ErroClass1') e executa suas instruções,
+e de acordo com as instruções passadas nesse bloco e retorna para o 'try' ou então continua executando 
+as próximas linhas de código.
 
+============================================================================================================
+            TIPO DE ERROS 
+
+TypeError:
+        Levantado quando uma operação ou função é aplicada a um objeto de tipo inadequado. O valor associado
+        é uma string que fornece detalhes sobre incompatibilidade de tipos.
+
+NameError:
+        Levantado quando um nome local ou global não é encontrado. Isso aplica-se somente para nomes não 
+        qualificados. O valor associado é uma mensagem de erro que inclui o nome que poderia
+        não ser encontrado.
+
+ValueError:
+        Levantado quando uma função ou operação built-in recebe um argumento que tem o tipo certo mas um valor
+        inapropriado, e a situação não é descrita por uma exceção mais precisa como 'IndexError'.
+    
+ZeroDivisionError:
+        Levantado quando o segundo argumento de uma divisão ou módulo é zero.
+
+UnicodeError:
+        Acontece quando um Unicode-relatado codificação ou decodificação ocorre erro.
+        
