@@ -6,10 +6,8 @@
 def erro(x):
     try:
         eval(x)
-    except TypeError:
-        print("Você não pode somar duas funções do mesmo tipo")
-    except NameError:
-        print("A sua variável não foi definida")
+    except (TypeError, NameError):
+        print("Ocorreu aqui um TypeError ou então um NameError")
     except ValueError:
         print("Não pode transfomar B em um número inteiro")
     except ZeroDivisionError:

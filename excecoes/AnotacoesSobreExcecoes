@@ -1,4 +1,4 @@
-            Exceções
+                Exceções
 
 Toda exceção pode ser tratada, e o objetivo de tratá-la é tentar solucionar o problema ocorrido para
 que a aplicação possa continuar a execução.     
@@ -15,13 +15,13 @@ aplicação seja finalizada               |
 
 
 ============================================================================================================
-            VALORES INVÁLIDOS
+                VALORES INVÁLIDOS
 
 Isso pode ocorrer quando nós estamos esperando de um usuário dados do tipo inteiro, e ele nos passa dados
 do tipo string.
 
 ============================================================================================================
-            TRATAMENTE DE MÚLTIPLAS EXCEÇÕES 
+                TRATAMENTE DE MÚLTIPLAS EXCEÇÕES 
 
 Quando a execução do nosso código ocorre tudo bem dentro da instrução "try", então não precisa ser executada
 a instrução 'except'.
@@ -29,7 +29,7 @@ a instrução 'except'.
 Temos também quando a exceção é tratada, ou seja, dentro do nosso bloco de instrução 'try' ocorreu uma
 exceção então ele pula pro bloco de execução 'except' e começa a executar as linhas de código do except.
 
-E quando a instrção 'try' encontra um error porém esse erro não é tratado no 'except', então a execução
+E quando a instrução 'try' encontra um error porém esse erro não é tratado no 'except', então a execução
 de todo o nosso script é interrompida.
 
 
@@ -39,8 +39,9 @@ ele pula pro bloco de instrução que contém ('except ErroClass1') e executa su
 e de acordo com as instruções passadas nesse bloco e retorna para o 'try' ou então continua executando 
 as próximas linhas de código.
 
+
 ============================================================================================================
-            TIPO DE ERROS 
+                TIPO DE ERROS 
 
 TypeError:
         Levantado quando uma operação ou função é aplicada a um objeto de tipo inadequado. O valor associado
@@ -60,4 +61,50 @@ ZeroDivisionError:
 
 UnicodeError:
         Acontece quando um Unicode-relatado codificação ou decodificação ocorre erro.
-        
+
+============================================================================================================
+                CAPTURANDO A INSTÂNCIA DO ERRO
+
+A instrução 'except' é como capturamos erros, ou melhor, é como capturamos a instância do objeto do erro
+que foi levantado. É importante observar que uma classe é definida para representar um erro em específico.
+Toda classe de erro, por definição extende da classe Exception, que é o topo da hierarquia de erros.
+Quando uma exceção é levantada, geralmente é definida em sua instância algumas mensagens adicionais 
+em relação ao problema que ocasionou o erro.
+
+O Python fornece um meio para obtermos essas informações adicionais que foram passadas à instância
+da exceção gerada.
+
+Para que nós possamos capturar a instância devemos utilizar a palavra reservada ' as ' e em seguida
+definir o nome(de uma variável qualquer), e é dessa forma que capturamos a instância do erro.
+
+>>> # print(type(e)) -- instância da exceção (De qual classe essa instância foi criada)
+>>> # print(e.args)  -- argumento das mensagens (Envia para a saída padrão) - args é uma lista definida
+em exceptions no caso, a classe base de todas as exceções que contém a mensagem ou então as mensagens de
+erros da exceção que acabou de ser levantada.
+
+============================================================================================================
+                BLOCO ELSE (exceções)
+
+Uma substrutura de 'try' que só terá seu bloco de instrução executado quando nenhuma exceção for levantada.
+
+As aplicações devem ser construídas de forma a evitar que exceções seja levantadas, pois exceções devem
+ocorrer o mínimo de vezes possíveis e portanto, tudo que pudermos fazer para evitá-las deve ser feito.
+Devemos ter como padrão que nenhum erro ocorre naturalmente, durante a execução da nossa aplicação
+nenhuma exceção deve ser levantada, não devemo assumir situações onde a maior parte das vezes ocorrerá
+exceções e então essas serão tratadas.
+
+Se na maior parte das vezes uma exceção for levantada, é melhor implementarmos um código que lide com 
+essa situação diretamente, ao invés de produzir um código onde exceções passem a ser regras que sempre
+acontecem. 
+
+O Python definiu uma instrução para implementarmos um bloco de código em estrutura try e serão sempre
+executadas todas as vezes que nenhuma exceção for levantada, dessa forma temos que o bloco de instrução
+try é executado e caso nenhum erro ocorra o cursor pulará por cima dos blocos except e executará o bloco
+definido com a instrução 'else'.
+
+Dessa forma, somos capazes de implementar determinado código que será executado todas as vezes que nenhuma
+exceção ocorrer. Essa é uma prática de desenvolvimento segura onde temos a certeza que um trecho de código
+só será executado quando nenhuma exceção tiver sido levantada. A instrução else utilizada com a instrução
+try, é semelhante ao que temos com o laço de repetição. Onde definimos o bloco que será executado no
+momento em que a condição deixar de ser verdadeira.
+
