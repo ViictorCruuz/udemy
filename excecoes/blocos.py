@@ -7,7 +7,7 @@ def erro(x):
     try:
         eval(x)
     except TypeError:
-        print("Você não pode somar a função duas funções do mesmo tipo")
+        print("Você não pode somar duas funções do mesmo tipo")
     except NameError:
         print("A sua variável não foi definida")
     except ValueError:
