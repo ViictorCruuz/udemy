@@ -1,0 +1,21 @@
+            FUNÇÃO EVAL BUILT0IN DO PYTHON
+
+Os argumentos são uma string e opcionais globais e locais. Se passado, globals tem que ser um dicionário
+Se passado, locals pode ser qualuqer objeto de mapeamento.
+
+O argumento da expressão é analisado e avaliado como uma expressão Python (tecnicamente falando, uma lista
+de condições) usando o globals e dicionários locais como globais e namespace local. Se o dicionário global
+é presente e este não contem o valor para a chave __builtins__, uma referência para o dicionário de um
+módulo builtins é inserido debaixo da chave antes que a expressão seja analisada. Isso significa que a 
+expressão normalmente tem todos os padrões de acesso ao módulo builtins e ambientes restritos são
+propagados. Se o dicionário local é omitido, o padrão será o dicionário global. Se ambos os dicionários
+são omitidos, a expressão é executada no ambiente onde "eval()" é chamado. O valor de retorno é o resultado
+da expressão avaliada. Erros de sintaxe são reportados como exceções. Exemplo:
+
+>>> x = 1
+>>> eval('x+1')
+2
+
+Esta função também pode ser usada para executar objetos de códigos arbitrários (como aqueles criados 
+pelo "compile()"). Neste caso, passo um objeto de código instanciado de uma string. Se o objeto de código for
+compilado com 'exec' como o argumento de modo, "eval()" é retornado um valor que pode ser None.
